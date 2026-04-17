@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eleanor &amp; Julian - The Wedding Keepsake</title>
+<!-- Google Fonts: Noto Serif for Editorial Headlines, Manrope for Functional Body -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Design System Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1E3B29",
+                        "on-primary": "#FFFFFF",
+                        "primary-container": "#A5D6A7",
+                        "on-primary-container": "#00210E",
+                        "primary-fixed": "#C8F0D0",
+                        "primary-fixed-dim": "#A5D6A7",
+                        "on-primary-fixed": "#00210E",
+                        "on-primary-fixed-variant": "#005227",
+                        "secondary": "#8C7335",
+                        "on-secondary": "#FFFFFF",
+                        "secondary-container": "#FDE094",
+                        "on-secondary-container": "#271900",
+                        "secondary-fixed": "#FDE094",
+                        "secondary-fixed-dim": "#DFC47A",
+                        "on-secondary-fixed": "#271900",
+                        "on-secondary-fixed-variant": "#584400",
+                        "tertiary": "#616161",
+                        "on-tertiary": "#FFFFFF",
+                        "tertiary-container": "#E0E0E0",
+                        "on-tertiary-container": "#1D1D1D",
+                        "tertiary-fixed": "#E0E0E0",
+                        "tertiary-fixed-dim": "#BDBDBD",
+                        "on-tertiary-fixed": "#1D1D1D",
+                        "on-tertiary-fixed-variant": "#424242",
+                        "surface": "#F9FAF7",
+                        "on-surface": "#1A1C1A",
+                        "surface-variant": "#E2E3DF",
+                        "on-surface-variant": "#434844",
+                        "outline": "#737974",
+                        "outline-variant": "#C3C8C2",
+                        "surface-container-lowest": "#FFFFFF",
+                        "surface-container-low": "#F3F5F1",
+                        "surface-container": "#EDF0EB",
+                        "surface-container-high": "#E8EAE5",
+                        "surface-container-highest": "#E2E5DF",
+                        "surface-bright": "#F9FAF7",
+                        "surface-dim": "#D9DBD6",
+                        "inverse-surface": "#2E312F",
+                        "inverse-on-surface": "#F0F2EE",
+                        "inverse-primary": "#8ACC99",
+                        "background": "#F9FAF7",
+                        "on-background": "#1A1C1A",
+                        "error": "#BA1A1A",
+                        "on-error": "#FFFFFF",
+                        "error-container": "#FFDAD6",
+                        "on-error-container": "#410002",
+                        "surface-tint": "#1E3B29"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom utilities for editorial feel */
+        .glass-panel {
+            background: rgba(249, 250, 247, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden min-h-screen flex flex-col">
+<!-- TopAppBar Shared Component -->
+<header class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-stone-900/70 backdrop-blur-md shadow-sm shadow-[#1b1c1b]/5 flex justify-between items-center px-6 py-4">
+<!-- Leading Icon -->
+<button class="text-primary dark:text-primary-container hover:opacity-80 transition-opacity scale-95 duration-300 flex items-center justify-center p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-container">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<!-- Headline -->
+<h1 class="text-xl font-serif italic text-primary dark:text-primary-container font-['Noto_Serif'] font-light tracking-wide text-center absolute left-1/2 -translate-x-1/2">
+            The Wedding Keepsake
+        </h1>
+<!-- Trailing Avatar -->
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/30 shadow-sm cursor-pointer hover:opacity-80 transition-opacity">
+<img alt="Couple Portrait" class="w-full h-full object-cover" data-alt="close up soft focus portrait of a romantic couple smiling warmly in natural soft sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEqdrIksdo8XImZQb0Q-mgjCCP1_AkG1a5Mee7NXadXclO4X0Rje4T1ykrs8q3JlWFCQjG0UlBvTBtamyXmmDoNaFgtoLp7PdaVxFih6TJaBgGtmcjR9zHWx8fZm2p2pEcTXc8tjg4QC_q3L27gmC7FHPM8o_tD8uPBv9AXm1mIn9kj7wdhsmg2VhH-UN3qc_hQrzejA-OwLQpl-gZxyFLMSjTeqaHpKYvomqPTh0qEmSOjr_B14LnZpJeLIBcpVytzaDl7Gtx7Ks"/>
+</div>
+</header>
+<!-- Main Content Canvas - Landing Page / Splash -->
+<!-- The intent of this page is a gateway, so we focus heavily on the 'Ethereal Union' editorial styling -->
+<main class="flex-grow pt-20 pb-32 md:pb-12 flex flex-col lg:flex-row items-center justify-center px-6 lg:px-16 xl:px-24 max-w-[1600px] mx-auto w-full relative">
+<!-- Ambient Background Glow -->
+<div class="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-gradient-to-br from-primary-fixed to-surface rounded-full mix-blend-multiply filter blur-[100px] opacity-40 pointer-events-none hidden lg:block"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[25rem] h-[25rem] bg-gradient-to-tl from-secondary-fixed to-surface rounded-full mix-blend-multiply filter blur-[80px] opacity-30 pointer-events-none hidden lg:block"></div>
+<!-- Left Column: Typography & Intent -->
+<div class="w-full lg:w-1/2 z-10 flex flex-col items-center lg:items-start text-center lg:text-left mt-8 lg:mt-0 lg:pr-12 order-2 lg:order-1">
+<p class="font-body text-xs md:text-sm uppercase tracking-[0.25em] text-tertiary mb-6 font-semibold">
+                You are invited
+            </p>
+<h2 class="font-headline text-6xl md:text-7xl lg:text-[7.5rem] leading-[0.9] text-primary mb-8 text-balance drop-shadow-sm">
+                Eleanor<br/>
+<span class="text-secondary italic font-light text-5xl md:text-6xl lg:text-[6rem] mx-2">&amp;</span><br/>
+                Julian
+            </h2>
+<div class="flex flex-col md:flex-row items-center lg:items-start gap-4 md:gap-8 mb-12 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary/80" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-body text-lg font-medium tracking-wide">September 24th, 2024</span>
+</div>
+<div class="hidden md:block w-px h-6 bg-outline-variant/40"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary/80" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-body text-lg font-medium tracking-wide">Tuscany, Italy</span>
+</div>
+</div>
+<!-- Primary CTA -->
+<button class="group flex items-center justify-center gap-4 bg-primary text-on-primary px-10 py-4 rounded-full font-body text-lg font-medium tracking-wide hover:bg-on-primary-fixed-variant hover:shadow-[0_8px_32px_rgba(30,59,41,0.25)] transition-all duration-300 active:scale-[0.98]">
+<span>Enter the Keepsake</span>
+<span class="material-symbols-outlined text-on-primary group-hover:translate-x-1 transition-transform duration-300">arrow_right_alt</span>
+</button>
+</div>
+<!-- Right Column: Editorial Imagery -->
+<div class="w-full max-w-md lg:max-w-none lg:w-1/2 relative order-1 lg:order-2 mb-12 lg:mb-0">
+<!-- Main Hero Image Frame -->
+<div class="relative rounded-t-full rounded-b-[3rem] overflow-hidden shadow-[0_32px_64px_rgba(27,28,27,0.06)] bg-surface-container-low aspect-[4/5] lg:aspect-[3/4] w-full border-[6px] border-surface-container-lowest">
+<img alt="Eleanor and Julian in Tuscany" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-1000 ease-out" data-alt="romantic couple holding hands walking away through a sunlit Tuscan vineyard with warm golden hour light and soft rolling hills in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYkZXKt51ww_TR112hPPxiASEnYGP7S0_JtjMS58v_DN9z9RgXSZnvBNw6f9TB-3giHArXEQ4hpocDEr2lLdznKgvl0h7l-UudNWxGhzT7m4XtmsjOcG9uSFpQGaEUaT1T0GcpbHKEo3lDcRzzJRL2C6wAOV9u3VbDNJRWdvhEtTaC8GAykNFJejcXd_5jLR3v5rvyTi-SzZeKqaufXu7Vo715b-rUDlZ_5Ohzhsf_RfKxap1kqPU521gNAe5bx43lFVt8HVuTtDI"/>
+<!-- Subtle inner shadow/vignette overlay for depth -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/20 to-transparent pointer-events-none"></div>
+</div>
+<!-- Floating Glassmorphism Detail Card -->
+<div class="absolute -bottom-8 -left-4 lg:-left-16 bg-surface-bright/80 backdrop-blur-xl p-5 md:p-6 rounded-2xl shadow-[0_16px_40px_rgba(27,28,27,0.08)] border border-outline-variant/15 flex items-center gap-4 z-20 w-[90%] md:w-auto">
+<div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-secondary-container flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline text-xl md:text-2xl text-primary leading-tight">Our Story</span>
+<span class="font-body text-xs md:text-sm text-tertiary tracking-wide mt-0.5">A journey of a thousand miles</span>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Shared Component -->
+<!-- Displayed on mobile to anchor the experience, adhering strictly to JSON styles -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-3xl bg-surface/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_-4px_24px_rgba(27,28,27,0.04)] md:hidden border-none">
+<ul class="flex justify-around items-end pb-4 px-2 pt-2">
+<!-- Active State: Home -->
+<li>
+<button class="flex flex-col items-center justify-center bg-primary text-white rounded-full p-3 -translate-y-2 transition-all shadow-lg scale-110 duration-200 ease-out focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1 hidden">Home</span>
+</button>
+</li>
+<!-- Inactive States -->
+<li>
+<button class="flex flex-col items-center justify-center text-outline p-2 hover:text-primary dark:hover:text-primary-container transition-colors focus:outline-none group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">location_on</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Details</span>
+</button>
+</li>
+<li>
+<button class="flex flex-col items-center justify-center text-outline p-2 hover:text-primary dark:hover:text-primary-container transition-colors focus:outline-none group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">schedule</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Timeline</span>
+</button>
+</li>
+<li>
+<button class="flex flex-col items-center justify-center text-outline p-2 hover:text-primary dark:hover:text-primary-container transition-colors focus:outline-none group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">group</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">People</span>
+</button>
+</li>
+<li>
+<button class="flex flex-col items-center justify-center text-outline p-2 hover:text-primary dark:hover:text-primary-container transition-colors focus:outline-none group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">auto_awesome</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Fun</span>
+</button>
+</li>
+</ul>
+</nav>
+</body></html>

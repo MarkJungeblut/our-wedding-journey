@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wedding Timeline</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#a3d3b7",
+                      "surface-container-low": "#e9eeea",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#e3dac3",
+                      "on-tertiary-container": "#332c1b",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#4a422a",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#183d2e",
+                      "on-secondary-fixed": "#1d1910",
+                      "on-secondary-fixed-variant": "#4a422a",
+                      "on-primary-fixed": "#072016",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#dbe3dd",
+                      "tertiary": "#c5a059",
+                      "inverse-on-surface": "#edf1ee",
+                      "on-background": "#1a201c",
+                      "outline": "#75877a",
+                      "secondary": "#9c8b65",
+                      "error": "#ba1a1a",
+                      "outline-variant": "#c2ccc5",
+                      "surface-variant": "#dae5dd",
+                      "on-primary-fixed-variant": "#112e21",
+                      "tertiary-container": "#e1c385",
+                      "tertiary-fixed": "#f2e4c9",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed": "#251f10",
+                      "surface-bright": "#f8faf8",
+                      "on-surface-variant": "#4a544d",
+                      "inverse-surface": "#2d332f",
+                      "inverse-primary": "#a3d3b7",
+                      "surface": "#f4f7f4",
+                      "secondary-fixed-dim": "#c7bc9f",
+                      "on-surface": "#1a201c",
+                      "on-primary-container": "#ffffff",
+                      "background": "#f4f7f4",
+                      "surface-container-highest": "#cfd9d2",
+                      "surface-container": "#e2e9e3",
+                      "on-error": "#ffffff",
+                      "primary": "#1b3022", /* Updated to Veridian Heirloom deep green */
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#ccd4ce",
+                      "on-secondary-container": "#38301c",
+                      "primary-fixed": "#bdf0d2",
+                      "tertiary-fixed-dim": "#d9cbab",
+                      "primary-container": "#235742",
+                      "secondary-container": "#ebdcb9"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Noto Serif"
+                      ],
+                      "body": [
+                              "Manrope"
+                      ],
+                      "label": [
+                              "Manrope"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .line-art-svg {
+        stroke: #1b3022;
+        stroke-width: 1.5;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+  </style>
+</head>
+<body class="bg-[#fcfdfa] text-on-surface font-body antialiased selection:bg-primary/20 relative">
+<!-- Background Botanical Elements -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-[0.07] flex flex-col justify-between" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ug8nVKjLuxTg8KNt6JDB6X4cG2gznDRdsPeF4Yk7R1WbQiN1e84jaQAyet7HeaoR03hUYe7bM5gOxV75lBCKCLsG25RQdw-tTeq64rt3c2Zjboxw_b2h03M-fvHHnjlfX_hdkRQJrOru3MTQ3B3PoV_x1k3XppH_dfimvKTtfh-kpGGgMCZWc0wpll9CYR8aJklJJOoezyMcQY9CDyQTvf0PzdtEmUPw2ayQEO5KM3gMlXTfuwP57F4jh8ClnOMXS3GvgSuw4OmJA'); background-size: cover; background-position: center;">
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fcfdfa]/80 backdrop-blur-md shadow-sm shadow-[#1a201c]/5 flex justify-between items-center px-6 py-4 transition-transform duration-300">
+<button class="text-[#1b3022] hover:opacity-80 transition-opacity p-2 -ml-2 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/50">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<h1 class="text-xl font-headline italic text-[#1b3022] tracking-wide font-light">The Wedding Keepsake</h1>
+<div class="w-8 h-8 rounded-full overflow-hidden border-2 border-surface-container-low shadow-sm hover:opacity-80 transition-opacity cursor-pointer">
+<img alt="Couple Portrait" class="w-full h-full object-cover" data-alt="close-up portrait of a happy couple in soft natural light, romantic elegant wedding aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj-3jlpHZe1AP5oqQ-IE_U0PGkV_IVHny1qaulL_w-MKnBs6NcznrrNBc1O4FdcWMU4xbizTo7YBZzO-LZC8c7f3JpaefCy8U4_I80Zr6MEU9oaa5OUa6jYF9PDG-g-YPSJd7Zeyear4_dnpvNWch2PegymsRtrZQgw1bigW7PM7Uiqoc7Jdws4-Isav9a8Y8ZmHpKv5vwmNnsK2He0t98X1by1QX2Kishjlbs5cq-j43noolU0YGlskT5dQNqpabaFcpjBh_R7ag"/>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-40 px-4 md:px-8 max-w-2xl mx-auto min-h-screen relative z-10">
+<!-- Hero Section -->
+<section class="mb-16 text-center relative pt-8">
+<h2 class="font-headline text-4xl md:text-5xl text-[#1b3022] mb-4 tracking-tight">Our Day</h2>
+<p class="font-body text-[#1b3022]/70 max-w-sm mx-auto">A timeline of our celebration. We can't wait to share these moments with you.</p>
+</section>
+<!-- Artistic Timeline Section -->
+<section class="relative flex flex-col items-center">
+<!-- Continuous Decorative SVG Line -->
+<svg class="absolute top-0 bottom-0 z-0 h-full w-[100px] text-[#c5a059] opacity-30" preserveaspectratio="none" viewbox="0 0 100 1000">
+<path d="M50,0 C50,100 20,150 50,250 C80,350 50,400 50,500 C50,600 20,650 50,750 C80,850 50,900 50,1000" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+<div class="space-y-24 w-full relative z-10">
+<!-- Event 1: Ceremony -->
+<article class="flex flex-col items-center text-center group">
+<div class="mb-4 text-[#1b3022]">
+<svg class="line-art-svg" height="48" viewbox="0 0 24 24" width="48">
+<!-- Wedding Rings SVG -->
+<circle cx="9" cy="12" r="5"></circle>
+<circle cx="15" cy="12" r="5"></circle>
+<path d="M11 9l1-2 1 2" stroke-linejoin="miter"></path>
+</svg>
+</div>
+<div class="flex items-center justify-center space-x-2 mb-2 text-[#1b3022]">
+<span class="font-headline text-3xl tracking-wide">14:00</span>
+</div>
+<h3 class="font-headline text-2xl text-[#1b3022] mb-2 italic">The Ceremony</h3>
+<p class="font-body text-[#1b3022]/80 text-sm leading-relaxed max-w-xs mb-3">Join us as we exchange vows. Please arrive 15 minutes early to find your seats.</p>
+<span class="inline-flex items-center text-xs font-label tracking-widest uppercase text-[#c5a059]">
+<span class="material-symbols-outlined text-[14px] mr-1">location_on</span>
+                St. Jude's Chapel
+            </span>
+</article>
+<!-- Event 2: Cocktail Hour -->
+<article class="flex flex-col items-center text-center group">
+<div class="mb-4 text-[#1b3022]">
+<svg class="line-art-svg" height="48" viewbox="0 0 24 24" width="48">
+<!-- Cocktail Glasses SVG -->
+<path d="M6 5l5 7v7M18 5l-5 7v7M8 19h8M6 5h12"></path>
+<path d="M16 4a2 2 0 11-4 0"></path>
+</svg>
+</div>
+<div class="flex items-center justify-center space-x-2 mb-2 text-[#1b3022]">
+<span class="font-headline text-3xl tracking-wide">15:30</span>
+</div>
+<h3 class="font-headline text-2xl text-[#1b3022] mb-2 italic">Cocktail Hour</h3>
+<p class="font-body text-[#1b3022]/80 text-sm leading-relaxed max-w-xs mb-3">Enjoy signature drinks and canapés on the terrace while we take family photos.</p>
+<span class="inline-flex items-center text-xs font-label tracking-widest uppercase text-[#c5a059]">
+<span class="material-symbols-outlined text-[14px] mr-1">location_on</span>
+                The West Terrace
+            </span>
+</article>
+<!-- Event 3: Dinner -->
+<article class="flex flex-col items-center text-center group">
+<div class="mb-4 text-[#1b3022]">
+<svg class="line-art-svg" height="48" viewbox="0 0 24 24" width="48">
+<!-- Plate and Fork SVG -->
+<circle cx="12" cy="12" r="7"></circle>
+<path d="M5 7v5a2 2 0 002 2h0a2 2 0 002-2V7M7 14v5M19 7v12M19 7c-2 0-3 1.5-3 4v3"></path>
+</svg>
+</div>
+<div class="flex items-center justify-center space-x-2 mb-2 text-[#1b3022]">
+<span class="font-headline text-3xl tracking-wide">18:00</span>
+</div>
+<h3 class="font-headline text-2xl text-[#1b3022] mb-2 italic">Dinner &amp; Speeches</h3>
+<p class="font-body text-[#1b3022]/80 text-sm leading-relaxed max-w-xs mb-3">A three-course meal followed by toasts from the wedding party.</p>
+<span class="inline-flex items-center text-xs font-label tracking-widest uppercase text-[#c5a059]">
+<span class="material-symbols-outlined text-[14px] mr-1">location_on</span>
+                Grand Ballroom
+            </span>
+</article>
+<!-- Event 4: Dancing -->
+<article class="flex flex-col items-center text-center group">
+<div class="mb-4 text-[#1b3022]">
+<svg class="line-art-svg" height="48" viewbox="0 0 24 24" width="48">
+<!-- Dancing Couple / House SVG concept -->
+<path d="M12 3l8 7v11H4V10z"></path>
+<path d="M9 21v-6a2 2 0 014 0v6"></path>
+<path d="M12 11c1.5 0 2.5-1 2.5-2.5S13.5 6 12 6s-2.5 1-2.5 2.5S10.5 11 12 11z"></path>
+</svg>
+</div>
+<div class="flex items-center justify-center space-x-2 mb-2 text-[#1b3022]">
+<span class="font-headline text-3xl tracking-wide">20:30</span>
+</div>
+<h3 class="font-headline text-2xl text-[#1b3022] mb-2 italic">Dancing Begins</h3>
+<p class="font-body text-[#1b3022]/80 text-sm leading-relaxed max-w-xs mb-3">Bring your dancing shoes as we open up the floor. Late-night snacks will be served.</p>
+<span class="inline-flex items-center text-xs font-label tracking-widest uppercase text-[#c5a059]">
+<span class="material-symbols-outlined text-[14px] mr-1">location_on</span>
+                Grand Ballroom
+            </span>
+</article>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-end pb-4 px-2 bg-[#fcfdfa]/90 backdrop-blur-xl rounded-t-3xl shadow-[0_-4px_24px_rgba(26,32,28,0.06)] border-t border-[#1b3022]/5">
+<a class="flex flex-col items-center justify-center text-[#75877a] p-2 hover:text-[#1b3022] transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 0;">favorite</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#75877a] p-2 hover:text-[#1b3022] transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 0;">location_on</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Details</span>
+</a>
+<!-- Active Tab -->
+<a class="flex flex-col items-center justify-center bg-[#1b3022] text-[#fcfdfa] rounded-full p-3 -translate-y-2 transition-all shadow-lg shadow-[#1b3022]/20 scale-110 duration-200 ease-out border-2 border-[#fcfdfa]" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Timeline</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#75877a] p-2 hover:text-[#1b3022] transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="font-label text-[10px] uppercase tracking-widest">People</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#75877a] p-2 hover:text-[#1b3022] transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 0;">auto_awesome</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Fun</span>
+</a>
+</nav>
+</body></html>
