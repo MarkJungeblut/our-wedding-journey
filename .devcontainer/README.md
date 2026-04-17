@@ -4,11 +4,11 @@
 
 | Tool | Version |
 |------|---------|
-| .NET SDK | 10 |
-| Node.js | 22 |
+| Node.js | 24 |
+| GitHub CLI | latest |
 | Claude Code CLI | latest |
 
-VS Code extensions for C# (Dev Kit + CSharpier), ESLint, and Prettier are installed automatically. Format-on-save is enabled for all supported file types.
+VS Code extensions for ESLint and Prettier are installed automatically. Format-on-save is enabled for TypeScript and TSX files.
 
 ## Required: Anthropic API key
 
@@ -24,4 +24,4 @@ Claude Code needs an API key to run. Add it as a **Codespaces secret** in your G
 
 Open this repository on GitHub and click **Code → Codespaces → Create codespace on main**.
 
-The `postCreateCommand` will install Claude Code and restore the .NET local tools (CSharpier) automatically. This takes a minute on first start.
+The `postCreateCommand` will install Claude Code automatically. This takes a moment on first start.
