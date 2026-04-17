@@ -30,9 +30,9 @@ All new code requires tests. No exceptions.
 
 Test behavior, not implementation. Query by accessible roles/text, not internal state or CSS classes.
 
-## Updating `docs/context.md`
+## Updating `CLAUDE.md`
 
-Update it when a new domain concept is introduced or requirements are clarified. Keep it minimal — facts only, no speculation. If it isn't load-bearing context, leave it out.
+Update it when a new domain concept is introduced, a key architectural decision is made, or the tech stack changes. Keep it minimal — facts only, no speculation. If it isn't load-bearing context for a future Claude session, leave it out.
 
 ## Scope
 
