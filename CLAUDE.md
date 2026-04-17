@@ -64,7 +64,7 @@ Core tokens:
 
 | Token | Value | Use |
 |---|---|---|
-| `primary` | `#1b3022` | Deep Forest Green — key interactive elements, headlines |
+| `primary` | `#061b0e` | Deep Forest Green — key interactive elements, headlines |
 | `secondary` | `#51634f` | Sage Green — icons, supportive elements |
 | `tertiary` | `#e9c176` | Shimmering Gold — high-impact accents, applied sparingly |
 | `surface` | `#fbf9f4` | Base "paper" background |
