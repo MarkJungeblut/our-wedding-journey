@@ -6,15 +6,15 @@
 src/frontend/
 ├── public/                  # Static assets (favicon, robots.txt)
 ├── src/
-│   ├── app/                 # App shell, router, global providers
+│   ├── app/                 # App shell, router, global providers, config.ts
 │   ├── features/            # Feature folders (colocate component, hook, types, tests)
-│   │   └── task-items/
+│   │   └── timeline/
 │   │       ├── components/
 │   │       ├── hooks/
-│   │       ├── api.ts       # API calls for this feature
+│   │       ├── api.ts       # API calls for this feature (add when backend exists)
 │   │       └── types.ts
 │   ├── shared/              # Reusable UI primitives, utilities, shared types
-│   ├── api/                 # Base API client (fetch wrapper / Axios instance)
+│   ├── api/                 # Base API client (add when backend exists)
 │   └── main.tsx             # Entry point
 ├── index.html
 ├── vite.config.ts
@@ -26,11 +26,11 @@ src/frontend/
 
 | Artifact            | Pattern                    | Example                    |
 |---------------------|----------------------------|----------------------------|
-| Component file      | PascalCase `.tsx`          | `TaskList.tsx`             |
-| Hook file           | `use` + PascalCase `.ts`   | `useTaskItems.ts`          |
+| Component file      | PascalCase `.tsx`          | `TimelineCard.tsx`         |
+| Hook file           | `use` + PascalCase `.ts`   | `useBottomNav.ts`          |
 | Utility file        | camelCase `.ts`            | `formatDate.ts`            |
-| Type / Interface    | PascalCase                 | `TaskItem`, `ApiResponse`  |
-| CSS module          | camelCase `.module.css`    | `taskList.module.css`      |
+| Type / Interface    | PascalCase                 | `TimelineEvent`, `Contact` |
+| CSS module          | camelCase `.module.css`    | `timelineCard.module.css`  |
 
 ## Component Structure
 
@@ -42,7 +42,7 @@ src/frontend/
 ## State Management
 
 - Local UI state: `useState` / `useReducer`.
-- Server state (fetching, caching, mutations): **TanStack Query** (React Query).
+- Server state (fetching, caching, mutations): **TanStack Query** (React Query) — add when a backend exists.
 - Global client state (if needed): **Zustand** — avoid Redux unless complexity warrants it.
 
 ## TypeScript
@@ -54,6 +54,6 @@ src/frontend/
 ## Testing
 
 - Framework: **Vitest** + **React Testing Library**
-- Test files live alongside the code they test: `TaskList.test.tsx`.
+- Test files live alongside the code they test: `TimelineCard.test.tsx`.
 - Test behavior, not implementation — query by accessible roles/text, not CSS classes.
 - Do not test internal state directly; interact through the rendered UI.
