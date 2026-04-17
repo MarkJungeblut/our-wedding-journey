@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **The Wedding Keepsake** — a React SPA for the wedding of Celina & Mark.  
 July 4, 2026 · Ceremony: Schloss Oldenburg · Reception: Gleispark  
-No backend. Pure frontend.
+No backend yet — pure frontend SPA for now. A backend may be introduced later.
 
 ## Stack (planned — scaffold not yet created)
 
