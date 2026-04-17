@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Dependencies (future)
+node_modules/
+
+# Build output (future)
+dist/
+build/
+
+# Env files (future)
+.env
+.env.local

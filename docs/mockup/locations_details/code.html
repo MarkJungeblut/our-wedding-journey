@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wedding Details</title>
+<!-- Google Fonts: Noto Serif & Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#83d69e",
+                        "surface-container-low": "#f2f5f1",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#fde09c",
+                        "on-tertiary-container": "#002022",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#224c4e",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#1a3626",
+                        "on-secondary-fixed": "#261a00",
+                        "on-secondary-fixed-variant": "#402d00",
+                        "on-primary-fixed": "#002110",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e7e9e5",
+                        "tertiary": "#396568",
+                        "inverse-on-surface": "#f0f1ed",
+                        "on-background": "#191d1a",
+                        "outline": "#717972",
+                        "secondary": "#b08c3d",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c2c9c2",
+                        "surface-variant": "#dce5dc",
+                        "on-primary-fixed-variant": "#00522b",
+                        "tertiary-container": "#bcebee",
+                        "tertiary-fixed": "#bcebee",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#002022",
+                        "surface-bright": "#f8fbf7",
+                        "on-surface-variant": "#404942",
+                        "inverse-surface": "#2e312f",
+                        "inverse-primary": "#83d69e",
+                        "surface": "#f8fbf7",
+                        "secondary-fixed-dim": "#e0c476",
+                        "on-surface": "#191d1a",
+                        "on-primary-container": "#002110",
+                        "background": "#f8fbf7",
+                        "surface-container-highest": "#e2e3df",
+                        "surface-container": "#edeeea",
+                        "on-error": "#ffffff",
+                        "primary": "#1a3626",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#d9dbd7",
+                        "on-secondary-container": "#261a00",
+                        "primary-fixed": "#9ef2b8",
+                        "tertiary-fixed-dim": "#a0cfd2",
+                        "primary-container": "#9ef2b8",
+                        "secondary-container": "#fde09c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen pb-24 selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f8fbf7]/70 dark:bg-stone-900/70 backdrop-blur-md shadow-sm shadow-[#191d1a]/5 flex justify-between items-center px-6 py-4 w-full">
+<button class="text-[#1a3626] dark:text-[#9ef2b8] hover:opacity-80 transition-opacity scale-95 duration-300">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<h1 class="font-['Noto_Serif'] font-light tracking-wide text-xl font-serif italic text-[#1a3626] dark:text-[#9ef2b8]">The Wedding Keepsake</h1>
+<button class="hover:opacity-80 transition-opacity scale-95 duration-300">
+<img alt="Couple Portrait" class="w-8 h-8 rounded-full object-cover shadow-sm" data-alt="Soft, romantic portrait of a happy couple in an outdoor setting with warm golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClL9AtABIUe-JNnqDWx4LLCq5mk67jZZtCHAtWySDJZ_q4qBpM8HaYgcc_QCKvJQvZ5VBifGk0IF4tNLiRYwHgk_PH3AHrXew7VhTQgMFyvbHf5VISPBXyzxPChL0GF0b3r2Lv2gO8cCiVBRuPXbisSf5Eumwy8SHH_Socnx9Mvd0fPOBjKL7U_BtDzPDTUKNFuBXzNh4fte20uEw5msjH4vgksNjs_gctOOJkcRPSjO-SrJljTj5g8yiTj4LaNO1J4EcKLDLjoyk"/>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 px-4 md:px-8 max-w-4xl mx-auto flex flex-col gap-8">
+<!-- Hero Title Area -->
+<section class="text-center py-8">
+<h2 class="font-headline text-4xl text-primary mb-2">The Details</h2>
+<p class="font-body text-on-surface-variant text-lg">Join us for a day of celebration.</p>
+</section>
+<!-- Ceremony Section (Editorial Card) -->
+<section class="bg-surface-container-low rounded-[1.5rem] overflow-hidden flex flex-col md:flex-row shadow-[0_8px_30px_rgba(25,29,26,0.04)]">
+<div class="w-full md:w-2/5 h-64 md:h-auto relative">
+<img alt="Ceremony Venue" class="w-full h-full object-cover" data-alt="Interior view of a beautiful historic stone chapel with stained glass windows and warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrVG3-JaKZdr16O9ckOwoSXO-XhYK5ciBcaLeNB3q4tYjA5mH3zLDPNuue8otrb547dsBtn_wI4L7tNpk-Us80TWpNSw9fTwxxigSHUXprcBWvSU8ZZcrIF5qe7bIIolX1YdAF0fwT2bXxZOuzJj5d8nAjhbKKl35rbBZ0V89vpFtpu5TRkUNx7OiEhTGG0AU_Gk4gfWo9kBAnS8lmuVBW4lfnrjzvG8oEb29r9u5tOz-b5MdEUdHwSOf2rA1KDtqGi_H22aL0bYg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent md:hidden"></div>
+</div>
+<div class="w-full md:w-3/5 p-8 flex flex-col justify-center bg-surface-container-lowest">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-sm">favorite</span>
+<span class="font-label text-xs uppercase tracking-widest text-primary font-semibold">The Ceremony</span>
+</div>
+<h3 class="font-headline text-3xl mb-6 text-on-surface">St. Jude's Historic Chapel</h3>
+<div class="flex flex-col gap-4 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-0.5">schedule</span>
+<div>
+<p class="font-body font-medium text-on-surface">Saturday, September 24th, 2024</p>
+<p class="font-body text-on-surface-variant">3:00 PM in the Afternoon</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-0.5">location_on</span>
+<div>
+<p class="font-body font-medium text-on-surface">123 Chapel Lane</p>
+<p class="font-body text-on-surface-variant">Oakhaven, CA 90210</p>
+</div>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary rounded-full px-6 py-3 font-label text-sm uppercase tracking-wider hover:opacity-90 transition-opacity w-full sm:w-auto" href="#">
+                        Open in Maps
+                    </a>
+</div>
+</div>
+</section>
+<!-- Reception Section (Editorial Card) -->
+<section class="bg-surface-container-low rounded-[1.5rem] overflow-hidden flex flex-col md:flex-row-reverse shadow-[0_8px_30px_rgba(25,29,26,0.04)]">
+<div class="w-full md:w-2/5 h-64 md:h-auto relative">
+<img alt="Reception Venue" class="w-full h-full object-cover" data-alt="Elegant outdoor wedding reception set up with long wooden tables, soft string lights, and lush greenery at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbVTDLjqrR1CP_IlGtjIozHwFwEaNpliLKKMV9lFNyAotJQ_MOC0H5H-VJWseQrojzkycYmB9WzOYi3o0Sigyf12TNMC4kaL4b1aKx15cHJidfxCwX-U3YIODQsKxBX3oBp2IxUYJys858kzCZNhNoW8sIbDuQzySc9P1GaYE0fXy66kML86S8SVw-sLjuDWIYkYt7iRmoP9wHC7rUqCOpB_a0nnW2K_5t5fG4Sf9gOENyZPCbi43BbQmslVU98zePWRb7Nbfbqps"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent md:hidden"></div>
+</div>
+<div class="w-full md:w-3/5 p-8 flex flex-col justify-center bg-surface-container-lowest">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary text-sm">local_bar</span>
+<span class="font-label text-xs uppercase tracking-widest text-secondary font-semibold">The Reception</span>
+</div>
+<h3 class="font-headline text-3xl mb-6 text-on-surface">The Rosewood Estate</h3>
+<div class="flex flex-col gap-4 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-0.5">schedule</span>
+<div>
+<p class="font-body font-medium text-on-surface">Cocktail Hour begins at 5:00 PM</p>
+<p class="font-body text-on-surface-variant">Dinner &amp; Dancing to follow</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-outline mt-0.5">location_on</span>
+<div>
+<p class="font-body font-medium text-on-surface">789 Valley Road</p>
+<p class="font-body text-on-surface-variant">Oakhaven, CA 90212</p>
+</div>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center justify-center bg-secondary text-on-secondary rounded-full px-6 py-3 font-label text-sm uppercase tracking-wider hover:opacity-90 transition-opacity w-full sm:w-auto shadow-sm" href="#">
+                        Open in Maps
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-end pb-4 px-2 bg-[#f8fbf7]/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-t-3xl shadow-[0_-4px_24px_rgba(25,29,26,0.04)]">
+<button class="flex flex-col items-center justify-center text-[#717972] p-2 hover:text-[#1a3626] dark:hover:text-[#9ef2b8] font-['Manrope'] text-[10px] uppercase tracking-widest">
+<span class="material-symbols-outlined mb-1">favorite</span>
+<span>Home</span>
+</button>
+<!-- Active Tab: Details -->
+<button class="flex flex-col items-center justify-center bg-[#1a3626] text-white rounded-full p-3 -translate-y-2 transition-all shadow-lg scale-110 duration-200 ease-out font-['Manrope'] text-[10px] uppercase tracking-widest">
+<span class="material-symbols-outlined icon-fill mb-0.5 text-white">location_on</span>
+<span class="text-white">Details</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#717972] p-2 hover:text-[#1a3626] dark:hover:text-[#9ef2b8] font-['Manrope'] text-[10px] uppercase tracking-widest">
+<span class="material-symbols-outlined mb-1">schedule</span>
+<span>Timeline</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#717972] p-2 hover:text-[#1a3626] dark:hover:text-[#9ef2b8] font-['Manrope'] text-[10px] uppercase tracking-widest">
+<span class="material-symbols-outlined mb-1">group</span>
+<span>People</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#717972] p-2 hover:text-[#1a3626] dark:hover:text-[#9ef2b8] font-['Manrope'] text-[10px] uppercase tracking-widest">
+<span class="material-symbols-outlined mb-1">auto_awesome</span>
+<span>Fun</span>
+</button>
+</nav>
+</body></html>
