@@ -33,9 +33,9 @@ Examples: `feat/task-list-api`, `fix/auth-token-expiry`, `chore/update-dependenc
 
 Examples:
 ```
-feat(api): add GET /api/v1/task-items endpoint
-fix(frontend): prevent double-submit on task creation form
-chore: upgrade to .NET 10.0.4
+feat(home): add hero section with couple names and CTA
+fix(nav): correct active route highlight on bottom navigation
+chore: upgrade vite to 6.1.0
 ```
 
 ## Pull Request Process
