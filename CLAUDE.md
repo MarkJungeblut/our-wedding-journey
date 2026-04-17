@@ -73,6 +73,10 @@ Core tokens:
 
 Fonts: **Noto Serif** for all display/headline/emotional copy · **Manrope** for body/labels/logistics.
 
+## Mobile-First
+
+This is a **mobile-first application**. Design and implement all UI starting from mobile viewports, then enhance for larger screens using Tailwind's responsive prefixes (`md:`, `lg:`). Never design desktop-first and adapt down.
+
 ## Working with Claude
 
 ### When to use plan mode
